@@ -1,0 +1,145 @@
+@font-face {
+	font-family:'WhitneyCondensed-Semibold';
+	src: url('fonts/WhitneyCondensed-Semibold_gdi.eot');
+	src: url('fonts/WhitneyCondensed-Semibold_gdi.eot?#iefix') format('embedded-opentype'),
+		url('fonts/WhitneyCondensed-Semibold_gdi.woff') format('woff'),
+		url('fonts/WhitneyCondensed-Semibold_gdi.ttf') format('truetype'),
+		url('fonts/WhitneyCondensed-Semibold_gdi.svg#WhitneyCondensed-Semibold') format('svg');
+	font-weight: 375;
+	font-style: normal;
+	font-stretch: condensed;
+	unicode-range: U+0020-2212;
+}
+
+
+@font-face {
+	font-family:'WhitneyCondensed-Medium';
+	src: url('fonts/WhitneyCondensed-Medium_gdi.eot');
+	src: url('fonts/WhitneyCondensed-Medium_gdi.eot?#iefix') format('embedded-opentype'),
+		url('fonts/WhitneyCondensed-Medium_gdi.woff') format('woff'),
+		url('fonts/WhitneyCondensed-Medium_gdi.ttf') format('truetype'),
+		url('fonts/WhitneyCondensed-Medium_gdi.svg#WhitneyCondensed-Medium') format('svg');
+	font-weight: 350;
+	font-style: normal;
+	font-stretch: condensed;
+	unicode-range: U+0020-2212;
+}
+
+body { margin: 0; }
+
+
+.content {
+	position:relative;
+	width:300px;
+	text-align:center;
+	z-index:1;
+	height: 250px;
+	display: inline-block;
+	overflow: hidden;
+	background-color: black;
+	border: 1px solid white;
+}
+.wrap {
+	animation: fadein 2s;
+
+}
+.message {
+	position: absolute;
+	top: 5px;
+	left: 7px;
+	text-align: left;
+	color: white;
+	width: 97%;
+}
+.thank, .support, .why, .why1, .why2, .why3, .why4 {
+	margin: 0;
+	opacity: 0;
+}
+.thank, .support {
+	position: relative;
+	top: 5px;
+	font-family: 'WhitneyCondensed-Semibold';
+	text-transform: uppercase;
+}
+.thank { font-size: 3.5em; }
+.support { font-size: 1em }
+.whys {
+	position: absolute;
+	top: 5px;
+	font-family: 'WhitneyCondensed-Medium';
+	font-size: 12pt;
+	font-weight: 100;
+	letter-spacing: .9pt;
+	line-height: 13pt;
+}
+img.logo {
+	position: absolute;
+	left: -74px;
+	bottom: -66px;
+}
+a.cta {
+	position: absolute;
+	display: block;
+	right: 0;
+	bottom: -28px;
+	width: 121px;
+	height: 59px;
+	background: transparent url('ctaSprite.png') no-repeat;
+}
+a.cta:hover {
+	background-position: -121px 0;
+}
+.kenBurns {
+  animation: kenBurns 13s ease;
+  animation-fill-mode: forwards;
+  transform-origin: bottom left;
+}
+@-webkit-keyframes kenBurns {
+  from {
+    transform: scale(1.1);
+
+  }
+  to {
+    transform: scale(1);
+  }
+}
+.logoMove {
+  animation: logoMove 1s ease;
+  animation-fill-mode: forwards;
+	}
+@-webkit-keyframes logoMove {
+  from {
+	left: -74px;
+	bottom: -66px;
+  }
+  to {
+	left: 0;
+	bottom: 0;
+  }
+}
+.ctaMove {
+  animation: ctaMove .5s linear;
+  animation-fill-mode: forwards;
+}
+@-webkit-keyframes ctaMove {
+  from {
+	right: 0;
+	bottom: -28px;
+  }
+  to {
+	right: 0;
+	bottom: 0;
+  }
+}
+.fade {
+
+}
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+
