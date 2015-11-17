@@ -51,7 +51,7 @@ body { margin: 0; }
 	color: white;
 	width: 97%;
 }
-.thank, .support, .why, .why1, .why2, .why3, .why4 {
+.thank, .support, .why1, .why2, .why3, .why4, .message1, .message2, .message3, .message4 {
 	margin: 0;
 	opacity: 0;
 }
@@ -61,7 +61,13 @@ body { margin: 0; }
 	font-family: 'WhitneyCondensed-Semibold';
 	text-transform: uppercase;
 }
-.thank { font-size: 3.5em; }
+.thank { 
+	font-size: 3.5em; 
+	line-height: 1em;
+}
+.fonted .thank {
+	margin-top: -1.5em;
+}
 .support { font-size: 1em }
 .whys {
 	position: absolute;
@@ -72,6 +78,7 @@ body { margin: 0; }
 	letter-spacing: .9pt;
 	line-height: 13pt;
 }
+.message4 { margin-top: 3px; }
 img.logo {
 	position: absolute;
 	left: -74px;
@@ -142,4 +149,7 @@ a.cta:hover {
         opacity:1;
     }
 }
-
+.frame { 
+	display: inline-block;
+	float: left;
+}
