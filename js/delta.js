@@ -33,7 +33,7 @@ $( document ).ready(function() {
  	});
   
  	$("img.logo").delay(6700).queue(function() { $(this).addClass('logoMove') });
- 	$("a.cta").delay(8000).queue(function() { $(this).addClass('ctaMove') });
+ 	$(".cta").delay(8000).queue(function() { $(this).addClass('ctaMove') });
 
 
 });

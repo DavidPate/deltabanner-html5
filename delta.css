@@ -87,7 +87,7 @@ img.logo {
 	left: -74px;
 	bottom: -66px;
 }
-a.cta {
+.cta {
 	position: absolute;
 	display: block;
 	right: 0;
@@ -96,7 +96,7 @@ a.cta {
 	height: 59px;
 	background: transparent url('ctaSprite.png') no-repeat;
 }
-a.cta:hover {
+.cta:hover {
 	background-position: -121px 0;
 }
 .kenBurns {
