@@ -101,6 +101,9 @@ img.logo {
 }
 .kenBurns {
   animation: kenBurns 13s ease;
+  -webkit-animation: kenBurns 13s ease;
+  -moz-animation: kenBurns 13s ease;
+  -o-animation: kenBurns 13s ease;
   animation-fill-mode: forwards;
   transform-origin: bottom left;
 }
@@ -113,8 +116,38 @@ img.logo {
     transform: scale(1);
   }
 }
+@-moz-keyframes kenBurns {
+  from {
+    transform: scale(1.15);
+
+  }
+  to {
+    transform: scale(1);
+  }
+}
+@-o-keyframes kenBurns {
+  from {
+    transform: scale(1.15);
+
+  }
+  to {
+    transform: scale(1);
+  }
+}
+@keyframes kenBurns {
+  from {
+    transform: scale(1.15);
+
+  }
+  to {
+    transform: scale(1);
+  }
+}
 .logoMove {
   animation: logoMove 1s ease;
+  -webkit-animation: logoMove 1s ease;
+  -moz-animation: logoMove 1s ease;
+  -o-animation: logoMove 1s ease;
   animation-fill-mode: forwards;
 	}
 @-webkit-keyframes logoMove {
@@ -127,11 +160,84 @@ img.logo {
 	bottom: 0;
   }
 }
+@-webkit-keyframes logoMove {
+  from {
+	left: -74px;
+	bottom: -66px;
+  }
+  to {
+	left: 0;
+	bottom: 0;
+  }
+}
+@-moz-keyframes logoMove {
+  from {
+	left: -74px;
+	bottom: -66px;
+  }
+  to {
+	left: 0;
+	bottom: 0;
+  }
+}
+@-o-keyframes logoMove {
+  from {
+	left: -74px;
+	bottom: -66px;
+  }
+  to {
+	left: 0;
+	bottom: 0;
+  }
+}
+@keyframes logoMove {
+  from {
+	left: -74px;
+	bottom: -66px;
+  }
+  to {
+	left: 0;
+	bottom: 0;
+  }
+}
 .ctaMove {
   animation: ctaMove .5s linear;
+  -webkit-animation: ctaMove .5s linear;
+  -moz-animation: ctaMove .5s linear;
+  -o-animation: ctaMove .5s linear;
   animation-fill-mode: forwards;
 }
+@keyframes ctaMove {
+  from {
+	right: 0;
+	bottom: -28px;
+  }
+  to {
+	right: 0;
+	bottom: 0;
+  }
+}
 @-webkit-keyframes ctaMove {
+  from {
+	right: 0;
+	bottom: -28px;
+  }
+  to {
+	right: 0;
+	bottom: 0;
+  }
+}
+@-moz-keyframes ctaMove {
+  from {
+	right: 0;
+	bottom: -28px;
+  }
+  to {
+	right: 0;
+	bottom: 0;
+  }
+}
+@-o-keyframes ctaMove {
   from {
 	right: 0;
 	bottom: -28px;
